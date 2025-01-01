@@ -2,4 +2,7 @@ docker pull ubuntu
 docker pull alpine
 docker pull nginx
 docker pull mysql
-docker pull httpd
+docker pull "httpd"
+docker container run hello-world
+docker container run -publish 81:80 --detach nginx
+docker container run -publish 81:80 (conver to 81 port)
